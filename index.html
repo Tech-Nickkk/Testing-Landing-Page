@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-icon">
+            <img src="Images/nav-logo.webp" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#heritage-1">Heritage</a></li>
+            <li><a href="#values-1">Values</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </div>
+    </nav>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section id="hero">
+                <div class="hero-content-left">
+                    <h1>Hey, I am
+                        <svg class="name-svg" width="223.262" height="185.681" viewBox="0 0 223.262 185.681"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="myClip">
+                                    <path
+                                        d="M 91.45 72.931 Q 92.2 73.081 92.7 73.731 Q 93.2 74.381 93.05 75.131 Q 92.9 75.881 92.2 76.381 Q 76.7 87.481 63.9 97.381 Q 65.2 101.481 64.2 106.381 Q 62.6 114.481 58.35 122.181 Q 54.1 129.881 48.65 135.681 Q 43.2 141.481 37.15 145.981 Q 31.1 150.481 25.65 152.881 Q 20.2 155.281 16.1 155.581 Q 15.5 155.681 15 155.681 Q 10.2 155.681 8.9 152.081 Q 6.6 145.781 19.6 131.381 Q 32.6 116.981 59.2 96.181 Q 56.2 90.681 47.4 86.031 Q 38.6 81.381 19.6 73.681 Q 14.4 71.581 11.6 70.381 Q 4.4 67.381 1.6 62.281 Q -1.2 57.181 0.9 50.581 Q 3.5 42.181 13.5 32.331 Q 23.5 22.481 35.35 15.081 Q 47.2 7.681 59.25 3.281 Q 71.3 -1.119 77.9 0.381 Q 79.4 0.681 80.65 1.331 Q 81.9 1.981 83.2 3.281 Q 84.5 4.581 85.05 6.831 Q 85.6 9.081 85.2 12.181 Q 85.1 12.681 84.8 13.081 Q 84.5 13.481 84 13.681 Q 83.5 13.881 83 13.781 Q 82.2 13.681 81.7 13.031 Q 81.2 12.381 81.3 11.581 Q 81.9 7.881 80.65 6.281 Q 79.4 4.681 77.1 4.181 Q 73.4 3.281 67.1 4.781 Q 60.8 6.281 53.05 9.831 Q 45.3 13.381 37.3 18.581 Q 24.4 26.681 15.6 35.581 Q 6.8 44.481 4.6 51.681 Q 1.3 61.981 13.1 66.881 Q 15.8 67.981 21.1 70.081 Q 27.7 72.781 30.9 74.131 Q 34.1 75.481 39.3 77.731 Q 44.5 79.981 47.3 81.581 Q 50.1 83.181 53.4 85.281 Q 56.7 87.381 58.8 89.431 Q 60.9 91.481 62.3 93.781 Q 74.9 83.981 90 73.281 Q 90.7 72.781 91.45 72.931 Z M 60.5 105.581 Q 61.1 102.581 60.6 99.981 Q 39.3 116.681 26.8 129.381 Q 19.5 136.881 15.6 142.731 Q 11.7 148.581 12.5 150.781 Q 12.9 151.981 15.8 151.781 Q 19.2 151.481 24.15 149.281 Q 29.1 147.081 34.75 142.881 Q 40.4 138.681 45.55 133.331 Q 50.7 127.981 54.8 120.631 Q 58.9 113.281 60.5 105.581 Z" />
+                                    <path
+                                        d="M 173.2 37.581 Q 173.7 38.181 173.6 38.981 Q 173.5 39.781 172.8 40.281 Q 171.6 41.081 170.5 40.181 Q 165.7 38.481 103.1 39.881 Q 96.6 67.181 89.9 99.081 Q 81.9 137.581 80.2 151.981 Q 80.4 151.981 80.6 152.081 Q 81.4 152.281 81.7 153.031 Q 82 153.781 81.7 154.481 Q 81.2 156.081 80.85 156.831 Q 80.5 157.581 79.8 158.331 Q 79.1 159.081 78.3 159.081 Q 78 159.081 77.6 158.981 Q 76.3 158.581 76.05 156.881 Q 75.8 155.181 76.3 152.281 Q 76.7 148.081 78.1 140.181 Q 80.6 125.181 85.6 101.181 Q 92.3 68.781 99.1 39.981 Q 92.3 40.081 82.2 40.381 Q 66.2 40.781 63.4 40.781 Q 62.6 40.781 62.05 40.231 Q 61.5 39.681 61.5 38.881 Q 61.5 38.381 61.75 37.931 Q 62 37.481 62.45 37.231 Q 62.9 36.981 63.4 36.981 Q 66.2 36.981 82.1 36.481 Q 92 36.281 100.1 36.081 Q 103.3 22.881 105.8 13.681 Q 106 12.881 106.7 12.481 Q 107.4 12.081 108.15 12.281 Q 108.9 12.481 109.3 13.181 Q 109.7 13.881 109.5 14.681 Q 107.1 23.581 104 35.981 Q 134 35.181 149.3 35.381 Q 164.6 35.581 168.55 36.031 Q 172.5 36.481 173.2 37.581 Z" />
+                                    <path
+                                        d="M 109.1 94.981 L 109 94.981 Q 106.3 94.881 104.25 93.131 Q 102.2 91.381 101.4 88.281 Q 100.1 83.381 101.85 78.931 Q 103.6 74.481 106.9 72.381 Q 107.6 71.881 108.5 72.181 Q 109.4 69.981 111.05 68.781 Q 112.7 67.581 114.5 67.881 Q 115.5 68.081 116.35 68.731 Q 117.2 69.381 118.05 70.781 Q 118.9 72.181 119.3 75.081 Q 119.7 77.981 119.5 81.981 Q 119.4 82.981 119.2 83.981 Q 123 84.781 127.65 82.081 Q 132.3 79.381 135.6 75.081 Q 136.1 74.481 136.9 74.381 Q 137.7 74.281 138.35 74.781 Q 139 75.281 139.1 76.081 Q 139.2 76.881 138.7 77.481 Q 134.6 82.781 128.9 85.781 Q 123.2 88.781 118.2 87.681 Q 116.8 91.081 114.3 93.031 Q 111.8 94.981 109.1 94.981 Z M 109.1 91.081 Q 110.5 91.081 112.05 89.781 Q 113.6 88.481 114.6 86.281 Q 108.1 82.681 107.8 76.481 Q 105.8 78.381 105.05 81.581 Q 104.3 84.781 105.1 87.181 Q 106.2 91.081 109.1 91.081 Z M 113.9 71.681 L 113.8 71.681 Q 113.4 71.681 112.8 72.331 Q 112.2 72.981 111.9 74.081 Q 111.3 76.181 112.1 78.381 Q 112.9 80.581 115.6 82.381 L 115.6 81.781 Q 115.8 79.381 115.65 77.631 Q 115.5 75.881 115.3 74.781 Q 115.1 73.681 114.8 72.981 Q 114.5 72.281 114.25 71.981 Q 114 71.681 113.9 71.681 Z" />
+                                    <path
+                                        d="M 176.55 73.831 Q 177.3 73.581 178 73.931 Q 178.7 74.281 179 75.031 Q 179.3 75.781 178.9 76.481 Q 176.2 82.281 172.8 88.381 Q 169.4 94.481 165.35 100.731 Q 161.3 106.981 157.3 110.931 Q 153.3 114.881 150.5 114.881 Q 149.8 114.881 149.2 114.581 Q 145.1 112.981 146.6 102.181 Q 148 92.081 154 73.581 Q 153.9 73.581 153.85 73.631 Q 153.8 73.681 153.7 73.681 Q 151.5 75.181 150.05 75.981 Q 148.6 76.781 146.15 77.781 Q 143.7 78.781 141.5 78.681 Q 139.3 78.581 137.4 77.281 Q 133.6 74.581 133.5 69.781 Q 133.4 64.981 137.1 59.281 Q 139.4 55.681 142.65 52.981 Q 145.9 50.281 148.2 51.781 Q 149.6 52.581 149.85 54.381 Q 150.1 56.181 148.1 61.331 Q 146.1 66.481 141.4 74.781 Q 144.5 75.181 151.6 70.481 Q 152.9 69.581 153.55 69.231 Q 154.2 68.881 155.05 68.481 Q 155.9 68.081 156.5 68.181 Q 157.1 68.281 157.7 68.681 Q 159.2 69.881 158.2 72.881 Q 148.2 103.881 150.3 110.481 L 150.6 111.081 Q 151.4 111.181 153.05 109.781 Q 154.7 108.381 157.15 105.381 Q 159.6 102.381 162.45 98.181 Q 165.3 93.981 168.75 87.881 Q 172.2 81.781 175.4 74.881 Q 175.8 74.081 176.55 73.831 Z M 137.7 67.081 Q 136.8 70.581 138.1 72.681 Q 145.4 59.981 145.9 55.481 Q 144.7 56.181 143.15 57.781 Q 141.6 59.381 139.95 61.931 Q 138.3 64.481 137.7 67.081 Z" />
+                                    <path
+                                        d="M 221.7 73.731 Q 222.5 73.881 222.95 74.531 Q 223.4 75.181 223.2 75.981 Q 223 76.781 222.4 77.181 Q 204.7 88.681 193.4 100.081 Q 187.5 135.381 180.5 157.381 Q 172.2 183.281 164.4 185.481 Q 163.7 185.681 162.9 185.681 Q 160.6 185.681 158.9 183.681 Q 156.1 180.081 155.85 171.781 Q 155.6 163.481 158.45 152.181 Q 161.3 140.881 166.7 130.381 Q 176.2 112.281 189.9 98.181 Q 191.4 88.781 192.9 78.481 Q 189.8 83.181 187.1 86.381 Q 182.7 91.781 178.7 89.381 Q 175.4 87.381 175.2 81.031 Q 175 74.681 178.1 67.181 Q 178.4 66.481 179.15 66.181 Q 179.9 65.881 180.6 66.181 Q 181.3 66.481 181.65 67.181 Q 182 67.881 181.7 68.681 Q 179 75.981 179.05 80.581 Q 179.1 85.181 180.7 86.081 Q 181.8 86.781 184.1 83.981 Q 189.1 77.981 194.4 68.781 Q 195.2 67.381 196.7 67.931 Q 198.2 68.481 198 69.981 Q 196.3 82.481 194.5 93.681 Q 204.8 84.081 220.3 73.981 Q 220.9 73.581 221.7 73.731 Z M 176.8 156.281 Q 183.2 136.281 188.7 105.181 Q 177.9 117.181 170.1 132.181 Q 165.8 140.381 163.25 148.931 Q 160.7 157.481 160.1 163.881 Q 159.5 170.281 160 174.881 Q 160.5 179.481 161.9 181.181 Q 162.6 181.981 163.3 181.781 Q 163.8 181.681 164.4 181.281 Q 165 180.881 166.4 179.231 Q 167.8 177.581 169.2 175.031 Q 170.6 172.481 172.7 167.581 Q 174.8 162.681 176.8 156.281 Z" />
+                                </clipPath>
+                            </defs>
+                            <path class="name-path" clip-path="url(#myClip)"
+                                d="M 83.324 12.47 C 86.552 1.949 76.538 2.079 69.892 2.644 C 52.444 4.128 25.182 26.933 19.659 28.858 C 12.068 31.504 -1.512 54.392 2.368 60.155 C 9.442 70.662 47.544 82.575 50.79 84.863 C 53.018 86.433 59.595 93.419 61.823 94.835 C 65.587 97.228 59.265 112.988 59.42 114.573 C 59.853 119 45.811 135.833 43.188 138.538 C 40.179 141.641 18.856 157.256 11.663 152.988 C 6.283 149.796 19.197 136.552 20.41 133.212 C 20.87 131.944 83.181 75.934 90.349 75.806 C 94.368 75.734 77.751 155.876 77.751 155.876 C 75.834 155.721 104.298 14.563 107.49 14.563 C 107.49 14.563 101.512 38.123 100.086 38.351 C 98.672 38.577 62.127 39.793 63.034 39.344 C 64.059 38.837 171.724 36.292 171.421 38.75 C 170.859 43.306 110.504 49.604 108.08 50.776 C 98.168 55.569 113.446 87.424 116.587 86.748 C 119.46 86.13 117.633 70.52 114.891 69.877 C 109.223 68.548 101.444 80.824 103.413 86.796 C 105.039 91.729 110.139 96.322 112.225 91.795 C 114.57 86.706 120.7 84.979 123.989 85.539 C 127.17 86.081 140.177 69.187 144.104 66.327 C 145.336 65.43 148.179 55.174 146.788 53.818 C 144.807 51.886 129.592 68.524 137.138 75.341 C 141.761 79.518 156.649 70.386 156.329 70.803 C 155.299 72.143 143.601 107.632 150.423 113.141 C 153.584 115.693 186.312 68.487 180.14 68.513 C 178.79 68.519 175.371 85.153 179.832 87.808 C 183.671 90.093 195.796 68.325 196.529 69.569 C 198.304 72.584 177.583 174.17 167.58 180.859 C 160.543 185.565 164.607 181.99 158.158 167.681 C 157.038 165.195 162.02 141.253 168.286 132.532 C 171.019 128.729 178.981 112.348 192.317 98.801 C 206.748 84.142 223.376 71.753 225.146 76.177 C 225.146 76.177 222.884 77.308 221.753 77.873" />
+                        </svg>
+                    </h1>
+                    <p>
+                        From fashion influencers to now a founder & CEO. Where creativity meets ambition—and sparks
+                        something bigger.
+                    </p>
+                    <button>
+                        <span class="btn-text">Enroll Now</span>
+                        <span class="arrow">&rarr;</span>
+                    </button>
+                </div>
+                <div class="hero-content-right">
+                    <div class="hero-img">
+                        <img src="Images/hero-img.webp" alt="Hero Image">
+                    </div>
+
+                    <!-- Floating Elements -->
+                    <div class="floating-element success-badge">
+                        98% Success<br>Guaranteed !
+                    </div>
+
+                    <div class="floating-element students-badge"> loading="lazy" class="animated-element"
+                        200+ Students<br>Trained
+                    </div>
+
+                    <div class="floating-element testimonial">
+                        <div class="testimonial-avatar">
+                            <img src="Images/hero-side-img.webp" alt="testimonial avatar">
+                        </div>
+                        <div class="testimonial-text">
+                            They are Amazing
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="journey">
+                <div class="journey-images">
+                    <img src="Images/journey-img-1.webp" alt="images" loading="lazy" class="animated-element">
+                    <img src="Images/journey-img-2.webp" alt="images" loading="lazy" class="animated-element">
+                    <img src="Images/journey-img-3.webp" alt="images" loading="lazy" class="animated-element">
+                </div>
+                <div class="journey-content">
+                    <h2>Hey, I'm <span>Foram</span></h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae leo vitae odio pharetra
+                        egestas. Ut vitae fermentum arcu. Nullam varius ligula non felis fermentum, sed tempor sapien
+                        porta. Donec sed pSince 2014, while pursuing my degree in Electronics and Communications
+                        Engineering, I knew my heart was destined for something beyond the conventional path. Even at a
+                        young age, despite challenges, I discovered my true passion—styling. I’ve always had an innate
+                        love for fashion, experimenting with countless ways to style outfits. I still remember the days
+                        when my wardrobe overflowed with clothes I couldn’t part with, and I always found myself saving
+                        those special “label pieces” for the perfect moment.urus sit amet nisi aliquet porta. Morbi
+                        facilisis ipsum vel lacus vehicula, in interdum libero dictum. Sed nec elit eget nisi dignissim
+                        tincidunt. Integer nec libero sed nisi sodales posuere.</p>
+                    <br>
+                    <p>Like many women around the world, I resonate with the joy, emotion, and creativity that fashion
+                        brings. My journey took a dramatic turn when I moved from India to London as a first-generation
+                        immigrant. Life changed 360 degrees, and with it came the challenge of proving to myself—and to
+                        the world—that it’s possible to break barriers, embrace a new culture, and build something
+                        extraordinary from scratch.</p>
+                    <br>
+                    <p>Coming from a humble and honest family, where my father served in the Government of India from
+                        the age of 18 until his retirement, I knew I wanted to create a different path—one that
+                        celebrated courage, individuality, and ambition. As an immigrant navigating different languages,
+                        cultures, and mindsets, I learned that it’s not just okay to dream differently—it’s powerful.
+                    </p>
+                    <br>
+                    <p>Completing my Fashion Styling course at FIT was a turning point. It gave me clarity, confidence,
+                        and the vision to step into the world I always imagined—and more, faster than I could have ever
+                        expected.</p>
+                    <br>
+                    <p>Today, I start this new chapter, from zero, with a venture that is as much yours as it is mine. I
+                        invite you to join me from day one and experience a glimpse of my world.</p>
+                    <br>
+                    <p>Welcome to my world.</p>
+                </div>
+            </section>
+
+            <section id="mission">
+                <div class="mission-content">
+                    <h2>Social profiles</h2>
+                    <p>From immigrant dreams to luxury reality - a story of resilience, cultural fusion,
+                        and the courage to redefine what luxury means.</p>
+                </div>
+                <div class="mission-images">
+                    <img src="Images/Mission-img-1.webp" alt="Image" loading="lazy" class="animated-element">
+                    <img src="Images/Mission-img-2.webp" alt="Image" loading="lazy" class="animated-element">
+                    <img src="Images/Mission-img-3.webp" alt="Image" loading="lazy" class="animated-element">
+                    <img src="Images/Mission-img-4.webp" alt="Image" loading="lazy" class="animated-element">
+                    <img src="Images/Mission-img-5.webp" alt="Image" loading="lazy" class="animated-element">
+                </div>
+            </section>
+
+            <section id="heritage-1">
+                <div class="heritage-1-circle"></div>
+                <div class="heritage-1-container">
+                    <img src="Images/Heritage-1-img.webp" alt="Image" loading="lazy" class="animated-element">
+                    <div class="heritage-1-content">
+                        <h2>Capsule wardrobe styling</h2>
+                        <p>To elevate underrepresented cultures in the luxury space,
+                            redefining what luxury means through depth, intention, and
+                            legacy.</p>
+                        <div class="content-1">
+                            <h3><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e3e3e3">
+                                    <path
+                                        d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                                </svg>Global Impact</h3>
+                            <p>Creating meaningful change by supporting immigrant communities
+                                and artisans through ethical supply chains.</p>
+                        </div>
+                        <div class="content-2">
+                            <h3><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e3e3e3">
+                                    <path
+                                        d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z" />
+                                </svg>Cultural Celebration</h3>
+                            <p>Honoring traditions while creating new aesthetics that challenge
+                                mainstream definitions of luxury.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="heritage-2">
+                <div class="heritage-2-content">
+                    <h2>Creative entrepreneur</h2>
+                    <p>My unique cultural lens fuses traditions in unexpected ways, introducing new
+                        aesthetics, rituals, and values to the luxury landscape.</p>
+                </div>
+                <div class="heritage-2-images">
+                    <img src="Images/Heritage-2-img-1.webp" alt="image" loading="lazy" class="animated-element">
+                    <img src="Images/Heritage-2-img-2.webp" alt="image" loading="lazy" class="animated-element">
+                    <img src="Images/Heritage-2-img-3.webp" alt="image" loading="lazy" class="animated-element">
+                </div>
+            </section>
+
+            <section id="values-1">
+                <div class="values-1-content">
+                    <h2>Values Driven Leadership</h2>
+                    <p>Modern luxury is about conscious power. I lead with purpose, advocating for
+                        ethical production, inclusion, and community impact.</p>
+                </div>
+                <div class="values-1-lower-content">
+                    <div class="lower-content-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M216-176q-45-45-70.5-104T120-402q0-63 24-124.5T222-642q35-35 86.5-60t122-39.5Q501-756 591.5-759t202.5 7q8 106 5 195t-16.5 160.5q-13.5 71.5-38 125T684-182q-53 53-112.5 77.5T450-80q-65 0-127-25.5T216-176Zm112-16q29 17 59.5 24.5T450-160q46 0 91-18.5t86-59.5q18-18 36.5-50.5t32-85Q709-426 716-500.5t2-177.5q-49-2-110.5-1.5T485-670q-61 9-116 29t-90 55q-45 45-62 89t-17 85q0 59 22.5 103.5T262-246q42-80 111-153.5T534-520q-72 63-125.5 142.5T328-192Zm0 0Zm0 0Z" />
+                        </svg>
+                        <h3>Sustainability</h3>
+                        <p>Ethical production practices that honor both people and planet.</p>
+                    </div>
+                    <div class="lower-content-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z" />
+                        </svg>
+                        <h3>Inclusion</h3>
+                        <p>Creating spaces where diverse cultures and perspectives thrive.</p>
+                    </div>
+                    <div class="lower-content-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                        </svg>
+                        <h3>Education</h3>
+                        <p>Empowering communities through knowledge and skill development.</p>
+                    </div>
+                    <div class="lower-content-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z" />
+                        </svg>
+                        <h3>Community</h3>
+                        <p>Building bridges and fostering meaningful connections.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="values-2">
+                <div class="values-2-container">
+                    <img class="kite" src="Images/values-2-kite.webp" alt="Kite" loading="lazy" class="animated-element">
+                    <div class="values-2-left-content">
+                        <h2>Subscribe to <span>LifeNotes</span></h2>
+                        <p>Join a growing community of more than <strong>310,000 friendly readers</strong>.</p>
+                        <div class="values-2-reivews">
+                            <img src="Images/values-2-people.webp" alt="reviews avatar" loading="lazy" class="animated-element">
+                            <div class="rating">
+                                <img src="Images/values-2-stars.webp" alt="ratings" loading="lazy" class="animated-element">
+                                <p>200+ reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="values-2-right-content">
+                        <h3>Each week, I share actionable productivity tips, practical life advice, and highlights from
+                            my favourite books, directly to your inbox.</h3>
+                        <input type="email" placeholder="Your email">
+                        <button>Subscribe</button>
+                        <p>By submitting this form, you’ll be signed up to my free newsletter, which sometimes includes
+                            mentions of my books, apps and courses. You can opt-out at any time with no hard feelings 😉
+                            Here’s our privacy policy if you like reading.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="connect">
+                <div class="connect-container">
+                    <div class="connect-content">
+                        <h2>Let's Create Together</h2>
+                        <p>Ready to be part of a movement that redefines luxury
+                            through cultural depth and authentic storytelling? Let's
+                            connect and create something meaningful together.</p>
+                        <div class="links">
+                            <svg fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">><path
+                                    d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z">
+                                </path></svg>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    fill="#0F0F0F"></path>
+                                <path
+                                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                    fill="#0F0F0F"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.7828 3.91825C20.1313 3.83565 20.3743 3.75444 20.5734 3.66915C20.8524 3.54961 21.0837 3.40641 21.4492 3.16524C21.7563 2.96255 22.1499 2.9449 22.4739 3.11928C22.7979 3.29366 23 3.6319 23 3.99986C23 5.08079 22.8653 5.96673 22.5535 6.7464C22.2911 7.40221 21.9225 7.93487 21.4816 8.41968C21.2954 11.7828 20.3219 14.4239 18.8336 16.4248C17.291 18.4987 15.2386 19.8268 13.0751 20.5706C10.9179 21.3121 8.63863 21.4778 6.5967 21.2267C4.56816 20.9773 2.69304 20.3057 1.38605 19.2892C1.02813 19.0108 0.902313 18.5264 1.07951 18.109C1.25671 17.6916 1.69256 17.4457 2.14144 17.5099C3.42741 17.6936 4.6653 17.4012 5.6832 16.9832C5.48282 16.8742 5.29389 16.7562 5.11828 16.6346C4.19075 15.9925 3.4424 15.1208 3.10557 14.4471C2.96618 14.1684 2.96474 13.8405 3.10168 13.5606C3.17232 13.4161 3.27562 13.293 3.40104 13.1991C2.04677 12.0814 1.49999 10.5355 1.49999 9.49986C1.49999 9.19192 1.64187 8.90115 1.88459 8.71165C1.98665 8.63197 2.10175 8.57392 2.22308 8.53896C2.12174 8.24222 2.0431 7.94241 1.98316 7.65216C1.71739 6.3653 1.74098 4.91284 2.02985 3.75733C2.1287 3.36191 2.45764 3.06606 2.86129 3.00952C3.26493 2.95299 3.6625 3.14709 3.86618 3.50014C4.94369 5.36782 6.93116 6.50943 8.78086 7.18568C9.6505 7.50362 10.4559 7.70622 11.0596 7.83078C11.1899 6.61019 11.5307 5.6036 12.0538 4.80411C12.7439 3.74932 13.7064 3.12525 14.74 2.84698C16.5227 2.36708 18.5008 2.91382 19.7828 3.91825ZM10.7484 9.80845C10.0633 9.67087 9.12171 9.43976 8.09412 9.06408C6.7369 8.56789 5.16088 7.79418 3.84072 6.59571C3.86435 6.81625 3.89789 7.03492 3.94183 7.24766C4.16308 8.31899 4.5742 8.91899 4.94721 9.10549C5.40342 9.3336 5.61484 9.8685 5.43787 10.3469C5.19827 10.9946 4.56809 11.0477 3.99551 10.9046C4.45603 11.595 5.28377 12.2834 6.66439 12.5135C7.14057 12.5929 7.49208 13.0011 7.49986 13.4838C7.50765 13.9665 7.16949 14.3858 6.69611 14.4805L5.82565 14.6546C5.95881 14.7703 6.103 14.8838 6.2567 14.9902C6.95362 15.4727 7.65336 15.6808 8.25746 15.5298C8.70991 15.4167 9.18047 15.6313 9.39163 16.0472C9.60278 16.463 9.49846 16.9696 9.14018 17.2681C8.49626 17.8041 7.74425 18.2342 6.99057 18.5911C6.63675 18.7587 6.24134 18.9241 5.8119 19.0697C6.14218 19.1402 6.48586 19.198 6.84078 19.2417C8.61136 19.4594 10.5821 19.3126 12.4249 18.6792C14.2614 18.0479 15.9589 16.9385 17.2289 15.2312C18.497 13.5262 19.382 11.1667 19.5007 7.96291C19.51 7.71067 19.6144 7.47129 19.7929 7.29281C20.2425 6.84316 20.6141 6.32777 20.7969 5.7143C20.477 5.81403 20.1168 5.90035 19.6878 5.98237C19.3623 6.04459 19.0272 5.94156 18.7929 5.70727C18.0284 4.94274 16.5164 4.43998 15.2599 4.77822C14.6686 4.93741 14.1311 5.28203 13.7274 5.89906C13.3153 6.52904 13 7.51045 13 8.9999C13 9.28288 12.8801 9.5526 12.6701 9.74221C12.1721 10.1917 11.334 9.92603 10.7484 9.80845Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="connect-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your@email.com">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell me about your vision..."></textarea>
+                        <button>Send Message</button>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <img src="Images/nav-logo.webp" alt="logo" loading="lazy" class="animated-element">
+                    <div class="footer-content">
+                        <p>© 2025 Foram. All rights reserved.</p>
+                        <p>Redefining luxury through authentic cultural storytelling.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
